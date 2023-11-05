@@ -1,0 +1,219 @@
+/* FONTS : 
+font-family: 'Abril Fatface', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto Serif', serif;
+*/
+
+/*---------------------- menu page ---------------------------------*/ 
+
+#menu-page{
+ margin: 0;
+ padding: 0;
+}
+.prime-container{
+  padding-top: 2rem;
+    margin-left: 7%;
+    margin-right: 7%;
+    background-color: white; 
+}
+
+.nav-bar{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding-bottom: 1rem;
+    align-items: center;
+
+   
+}
+
+.logo{
+    font-family: 'Abril Fatface', serif;   
+    font-size: 27px;
+    color: rgb(215, 91, 33); 
+  
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+    font-size: 0.8rem;
+    gap: 1rem;
+    color: rgb(215, 91, 33); 
+}
+.pickup-btn{
+    padding: 0.8rem;
+    border-radius: 38%;
+    border: none;
+    font-size: 0.8rem;
+}
+.select-change-btns{
+display: flex;
+}
+.select-outlet-btn{
+    border: none;
+    border-bottom-left-radius: 39%;
+    border-top-left-radius: 39%;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+
+}
+.change-btn{
+    border: none;
+    border-bottom-right-radius: 42%;
+    border-top-right-radius: 42%;
+    padding: 0.8rem;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    background-color: rgb(215, 91, 33);  
+    color: white;
+    
+}
+.login{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.login-btn{
+    border: solid 1px rgb(215, 91, 33); 
+    font-weight: bolder;
+    padding: 0.5rem;
+    color: rgb(215, 91, 33);
+    border-radius: 5%;
+    background-color: white;
+}
+.login-btn:hover {
+     background-color: rgb(246, 245, 245);
+
+  }
+
+  .hero-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap:1rem;
+    font-family: 'Roboto Serif', serif;
+  }
+
+  .left-container-title , .right-container-title{
+    padding: 0.5rem;
+    font-size: 13px;
+    font-weight: bolder;
+   background-color: rgb(246, 245, 245);
+   border-bottom: 0.5px solid rgb(214, 209, 209);
+   padding-bottom: 0.7rem;
+
+
+  }
+  .menu-category-items{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    padding-left: 1rem;
+  }
+  .menu-category-item{
+    padding: 0.2rem;
+    border-left: solid 2px white;
+  }
+  .menu-category-item:hover{
+    background-color: rgb(247, 244, 238);
+    border-left: 2px solid orange;
+  }
+  .search-bar{
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: 0.5px solid rgb(214, 209, 209);
+  }
+  .search-bar-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border-bottom: 0.5px solid rgb(214, 209, 209);
+    padding-bottom: 0.3rem;
+  }
+  .veg-nonveg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .veg , .nonveg{
+    font-size: 9px;
+    color:rgb(215, 91, 33); 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .veg-icon , .nonveg-icon{
+    width: 20px;
+  }
+  input:focus {
+    outline: none;
+  }
+/*-------------------sole menu --------------------------------------------------------------- */
+.menu-item-container{
+  height: 100%;
+
+}
+.menu-title{
+   font-family: 'Open Sans', sans-serif;
+   padding: 0.5rem;
+    font-weight: bold;
+    font-size: normal;
+    
+}
+
+.menu-item-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 1rem;
+    
+}
+.menu-item{
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 0.75rem;
+}
+.menu-item-img {
+    background: rgb(235,130,141);
+    background: radial-gradient(circle, rgb(217, 186, 136) 0%, white 100%);
+    text-align: center;
+   
+}
+.menu-item-img img{
+    height: 11rem;
+}
+
+.price-card{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.price-btn{
+    border: none;
+    padding: 0.3rem  1rem 0.3rem  1rem ;
+    background-color: white;
+    font-weight: 600;
+}
+
+.add-btn{
+    border: 0.5px solid rgb(214, 209, 209);
+    color: rgb(215, 91, 33);
+    font-weight: bold;
+    border-radius: 10%;
+    padding: 0.3rem  1rem 0.3rem  1rem ;
+    background-color: white;
+}
+.add-btn:hover{
+    background-color:rgb(249, 245, 245); ;
+}
+
+
+/* About Us page */
+#about-page {
+  background-image: url(./images/donut.png);
+  background-repeat: no-repeat;
+  background-size:  30%;
+  
+}

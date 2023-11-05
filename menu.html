@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@300&family=Roboto+Serif:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="menu-page">
+
+    <div class="prime-container">
+        <nav class="nav-bar">
+            <div class="logo">Crumbs&Co.</div>
+
+            <div class="location">
+                <div>
+                    <button class="pickup-btn">🛍️ Pickup</button>
+                </div>
+                <div>From</div>
+                <div class="select-change-btns">
+                    <button class="select-outlet-btn">Select Outlet</button>
+                    <button class="change-btn">CHANGE</button>
+                </div>
+            </div>
+
+            <div class="login"><button class="login-btn">LOGIN </button>
+        </nav>
+
+        <section class="hero-container">
+            <section class="left-container">
+                <div class="left-container-title">🍴 Menu Categories</div>
+                <div id="menu-category-items" class="menu-category-items"></div>
+            </section>
+
+            <section class="middle-container">
+                <div class="search-bar-container">
+                    <div>
+                        <input class="search-bar" type="text" placeholder="🔍 Search menu items, categories here">
+                    </div>
+                    <div class="veg-nonveg">
+                        <div class="veg">
+                            <img class="veg-icon" src="./images/veg.png" alt="">
+                            <div>veg</div>
+                        </div>
+                        <div class="nonveg">
+                            <img class="nonveg-icon" src="./images/nonveg.png" alt="">
+                            <div>non-veg</div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="menu-item-container" class="menu-item-container">
+                    <div id="menu-item-grid" class="menu-item-grid"></div>
+                </div>
+
+
+
+
+
+            </section>
+
+            <section class="right-container">
+                <div class="right-container-title"> 🛒 Cart</div>
+            </section>
+        </section>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
