@@ -14,7 +14,7 @@ function addItemsToMenuCategory() {
 addItemsToMenuCategory();
 
 
-const donut = [
+const donuts = [
     {
         name: "Carmel Macchiato",
         image: "./images/d (1).png", // Image URL
@@ -113,7 +113,7 @@ const donut = [
   
 ];
 
-const cake = [
+const cakes = [
     {
         name: "Chocolate Truffle",
         image: "./images/cake (1).png", // Image URL
@@ -135,16 +135,19 @@ const cake = [
         price: "₹ 109",
     },
 ];
-let test = cake.name;
-console.log(test);
 
-const menuItemGrid = document.getElementById("menu-item-grid"); 
 
-function addMenuItems( menuItemsData) // the parameter menuItemsData targets the menu category items 
+const menuItemContainer = document.getElementById("menu-item-container");
+
+
+function addMenuItems( menuItemsData, categoryName) // the parameter menuItemsData targets the menu category items 
 {
-    const menuTitle = menuItemsData
-    const title = menuTitle.toString();
-    console.log(title);
+    let menuTitle = document.createElement("div");
+    let title = categoryName; 
+    menuTitle.classList.add("menu-title");
+    menuTitle.textContent = title;
+    const menuItemGrid = document.createElement("div");
+    menuItemGrid.classList.add("menu-item-grid");
     for(let index=0 ; index < menuItemsData.length ; index++){
         let menuItem = document.createElement("div"); // create a menu item div 
         menuItem.classList.add("menu-item");
@@ -169,24 +172,33 @@ function addMenuItems( menuItemsData) // the parameter menuItemsData targets the
         priceCard.append(addBtn); // append addBtn to priceCard
         menuItem.append(priceCard); // append priceCard to menuItem 
     
-        menuItemGrid.append(menuItem); // append the menuItem to the menuItemGrid 
+       
+        menuItemGrid.append(menuItem); // append the menuItem to the menuItemGrid      
+        
     }
+  
+    menuItemContainer.append(menuItemGrid) ;  
+    
 }
 
-addMenuItems(donut);
-addMenuItems(cake);
+addMenuItems(donuts , "donuts");
+addMenuItems(cakes , "cakes");
 
 
-
-/* This is how the above menu Item should look (html sample) 
-<div id="menu-item-grid" class="menu-item-grid"> ✨
-                        <div class="menu-item"> ✨
-                            <div class="menu-item-img"><img src="./images/d (1).png" alt=""></div>✨
-                            <div>hazelnut moose</div>✨
-                            <div class="price-card">✨
-                                <button class="price-btn">₹ 119</button>✨
-                                <button class="add-btn">ADD</button>✨
-                            </div>
-                        </div>
-*/
-
+window.addEventListener('load', function () {
+    const primeContainer = document.querySelector('.prime-container');
+    const menuContainer = document.querySelector('.menu-item-container');
+  
+    const updateMenuHeight = function () {
+      const windowHeight = window.innerHeight;
+      const primeContainerHeight = primeContainer.clientHeight;
+      const menuHeight = Math.max(windowHeight, primeContainerHeight);
+      menuContainer.style.height = menuHeight + 'px';
+    };
+  
+    // Call the function initially to set the menu height correctly
+    updateMenuHeight();
+  
+    // Add an event listener to update the menu height on resize
+    window.addEventListener('resize', updateMenuHeight);
+  });

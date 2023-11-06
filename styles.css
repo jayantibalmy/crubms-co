@@ -11,13 +11,17 @@ font-family: 'Roboto Serif', serif;
  padding: 0;
 }
 .prime-container{
-  padding-top: 2rem;
+  
     margin-left: 7%;
     margin-right: 7%;
     background-color: white; 
+    height: 100vh;
+    overflow: hidden;
+   
 }
 
 .nav-bar{
+    padding-top: 1rem;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     padding-bottom: 1rem;
@@ -29,8 +33,11 @@ font-family: 'Roboto Serif', serif;
 .logo{
     font-family: 'Abril Fatface', serif;   
     font-size: 27px;
-    color: rgb(215, 91, 33); 
-  
+}
+.logo a{
+  text-decoration: none;
+  color: rgb(215, 91, 33); 
+
 }
 
 .location{
@@ -151,8 +158,11 @@ display: flex;
     outline: none;
   }
 /*-------------------sole menu --------------------------------------------------------------- */
+
 .menu-item-container{
-  height: 100%;
+  overflow-y: scroll;
+  
+  
 
 }
 .menu-title{
@@ -167,6 +177,8 @@ display: flex;
     display: grid;
     grid-template-columns: 1fr 1fr ;
     gap: 1rem;
+    
+   
     
 }
 .menu-item{
@@ -209,8 +221,12 @@ display: flex;
     background-color:rgb(249, 245, 245); ;
 }
 
+/* Style the scrollbar track */
+::-webkit-scrollbar {
+  width: 0px; /* Change the width of the scrollbar track */
+}
 
-/* About Us page */
+/*-------------- About Us page ---------------------------------------------------*/
 #about-page {
   background-image: url(./images/donut.png);
   background-repeat: no-repeat;
